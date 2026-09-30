@@ -1,0 +1,5 @@
+Flask==3.0.2
+web3==6.15.1
+gunicorn==21.2.0
+setuptools==69.1.1
+tronpy[mnemonic]==0.4.0
