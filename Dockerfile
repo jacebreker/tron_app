@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run gunicorn directly (port is dynamically injected by Railway via $PORT)
-CMD ["sh", "-c", "gunicorn --workers 2 --bind 0.0.0.0:${PORT:-8080} tron_app:app"]
+CMD gunicorn --workers 2 --bind 0.0.0.0:$PORT tron_app:app
